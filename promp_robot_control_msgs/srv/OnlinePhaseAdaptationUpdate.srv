@@ -1,0 +1,15 @@
+#Request Type
+
+uint8 action
+uint8 START_ILQR=1
+uint8 STOP_ILQR=2
+
+float64[] weights
+float64 start_z
+float64 start_dz
+float64 max_dz
+
+---
+#Response Type
+
+

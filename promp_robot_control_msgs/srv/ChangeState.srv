@@ -1,0 +1,9 @@
+#Request Type
+
+bool state_complete
+
+uint8 promp_id
+---
+#Response Type
+
+

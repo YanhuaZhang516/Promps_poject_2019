@@ -1,0 +1,10 @@
+int32 action
+geometry_msgs/Point robot_position
+geometry_msgs/Point human_position
+float64 robot_velocity
+---
+float64 dt
+float64[] velocity_human
+float64[] new_belief
+geometry_msgs/Pose[] goals
+

@@ -1,0 +1,5 @@
+bool start
+string robot_file
+string goals_file
+string belief_tracker_parameters_file
+uint8 belief_tracker_goal_transition_history

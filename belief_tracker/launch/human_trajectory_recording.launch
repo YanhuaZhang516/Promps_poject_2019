@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<launch>
+   
+   
+   
+
+    <node name="human_trajectory_recording_node" pkg="belief_tracker" type="human_trajectory_recording.py" respawn="false" output="screen" />
+
+</launch>

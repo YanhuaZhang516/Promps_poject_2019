@@ -1,0 +1,13 @@
+#Request Type
+
+uint8 action
+uint8 START_PROMP=1
+uint8 STOP_PROMP=2
+uint8 UPDATE_DZ=3
+
+float64 ddz
+uint8 promp_id
+---
+#Response Type
+float64 z
+

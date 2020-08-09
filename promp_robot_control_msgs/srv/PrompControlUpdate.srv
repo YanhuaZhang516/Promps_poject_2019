@@ -1,0 +1,46 @@
+#Request Type
+
+uint8 action
+uint8 START_PROMP=1
+uint8 PREPARE_PROMP=2
+uint8 STOP_PROMP=3
+uint8 UPDATE_DZ=4
+
+uint8 TASK_SPACE=0
+uint8 JOINT_SPACE=1
+
+uint8 control_mode
+
+uint8 USER_MODE=1 # user can specify acc dec commands over the service
+
+uint8 REACTIVE_STOP_POS_MODE=2 # reactive stopping in close proximity to human
+uint8 REACTIVE_STOP_DIR_MODE=3 # reactive stopping when human direction interfers with robot path
+uint8 REACTIVE_STOP_GOAL_MODE=4 # reactive stopping when human goal interfers with robot path
+uint8 REACTIVE_STOP_PRED_MODE=5 # reactive stopping when human goal interfers with robot path
+
+uint8 TEMPORAL_SCALING_REACTIVE_GOAL_MODE=6 # immidiate slowing down when current human goal interfers with human path
+uint8 TEMPORAL_SCALING_REACTIVE_DIR_MODE=7 # immidiate slowing down when current direction interfers with human path
+uint8 TEMPORAL_SCALING_REACTIVE_PRED_MODE=8 # optimized temporal scaling with respect to predicted human motion
+
+uint8 TEMPORAL_SCALING_OPTIMIZED_GOAL_MODE=9 # optimized temporal scaling with respect to human goal
+uint8 TEMPORAL_SCALING_OPTIMIZED_DIR_MODE=10 # optimized temporal scaling with respect to human direction
+uint8 TEMPORAL_SCALING_OPTIMIZED_PRED_MODE=11 # optimized temporal scaling with respect to predicted human motion
+
+uint8 SPATIAL_DEFORMATION_POS_MODE=12 # optimized promp spatially wrt current location of human + safety distance
+uint8 SPATIAL_DEFORMATION_DIR_MODE=13 # optimized promp spatially wrt current direction of human + safety distance
+uint8 SPATIAL_DEFORMATION_PRED_MODE=14 # optimized promp spatially wrt current direction of human + safety distance
+
+float64 ddz
+uint8 promp_id
+float64[] preparation_hand
+bool online_phase_adaptation
+float64 preparation_dt
+uint8 type
+bool human_aware_motion
+
+
+
+---
+#Response Type
+float64 z
+

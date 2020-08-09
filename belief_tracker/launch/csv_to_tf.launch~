@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<launch>
+   
+   
+   
+
+    <node name="csv_to_tf_node" pkg="belief_tracker" type="csv_to_tf.py" respawn="false" output="screen" />
+
+</launch>

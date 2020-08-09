@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+   
+    <param name="frequency" value="20" />
+    <param name="human_frame" value="/human" />
+    <param name="belief_tracker_only" value="True" />
+   
+
+    <node name="belief_tracker_node" pkg="belief_tracker" type="belief_tracker.py" respawn="false" output="screen" />
+
+</launch>

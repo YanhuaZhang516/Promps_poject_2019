@@ -1,0 +1,6 @@
+#can be empty , only used for goal coputation from csv file
+string csv_filename 
+
+---
+geometry_msgs/Point[] goals
+geometry_msgs/Point[] covariances

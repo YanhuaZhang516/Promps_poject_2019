@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<launch>
+    <param name="num_particles" value="1000" />
+    <param name="belief_tracker_only" value="False" />
+
+    <include file="$(find belief_tracker)/launch/belief_tracker.launch" />
+    <include file="$(find belief_tracker)/launch/goal_tracker.launch" />
+</launch>

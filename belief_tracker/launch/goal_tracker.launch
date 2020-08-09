@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<launch>
+<node name="goal_tracker_node" pkg="belief_tracker" type="goal_tracker.py" respawn="true" output="screen" >
+
+<param name="goal_file" type="string" value="goals.csv" />
+
+</node>
+</launch>
